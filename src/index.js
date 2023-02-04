@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import POPOSList from './POPOSList';
-import About from './About';
-import POPOSDetails from './POPOSDetails'
+import App from './components/App/App.js';
+import POPOSList from './components/POPOSList/POPOSList.js';
+import About from './components/About/About';
+import POPOSDetails from './components/POPOSDetails/POPOSDetails'
 import reportWebVitals from './reportWebVitals';
 // HashRouter and BrowserRouter are two options. 
 // They act the same and only differ in how they handle the URL/Path.

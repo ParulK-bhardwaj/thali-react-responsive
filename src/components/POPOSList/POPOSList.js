@@ -1,7 +1,7 @@
 import React from 'react';
-import POPOSSpace from './POPOSSpace';
+import POPOSSpace from '../POPOSSpace/POPOSSpace.js';
 import './POPOSList.css';
-import data from './sfpopos-data.json'
+import data from '../../sfpopos-data.json';
 
 // map() returned an array of strings where 
 // the callback function returned the title from each obj in the original array.
@@ -9,7 +9,7 @@ import data from './sfpopos-data.json'
 // POPOSList is responsible for rendering its children contibuting to UI.
 // Components represent UI elements.
 export default function POPOSList() {
-    const spaces = data.map((obj, i) => {
+    const spaces = data.map((obj, i) => {           
         // Deconstruct obj into properties
         const { title, address, images, hours } = obj
         return (

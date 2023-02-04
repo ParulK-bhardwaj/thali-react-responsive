@@ -3,6 +3,7 @@ import './POPOSSpace.css';
 
 // Link on the other hand is for general navigation that might appear anywhere else. The big difference is NavLink offers the extra feature of activeClassName and Link doesn't have this.
 import { Link } from 'react-router-dom';
+
 //className for the top level element in the component  should match it's name. 
 // This will help us remember what styles apply to what, 
 // and keep us from using the same names in different files.

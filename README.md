@@ -1,3 +1,6 @@
+# ACS-1320 React Project
+The goal of this tutorial is to make a site for SFPOPOS (San Francisco Privately Owned Public Open Spaces).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -9,11 +9,12 @@ import data from './sfpopos-data.json'
 // POPOSList is responsible for rendering its children contibuting to UI.
 // Components represent UI elements.
 export default function POPOSList() {
-    const spaces = data.map((obj) => {
+    const spaces = data.map((obj, i) => {
         // Deconstruct obj into properties
         const { title, address, images, hours } = obj
         return (
             <POPOSSpace
+            id={i}
             key={title} // The title could be a key
             name={title}
             address={address}

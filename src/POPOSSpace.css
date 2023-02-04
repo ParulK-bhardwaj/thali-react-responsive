@@ -1,0 +1,23 @@
+/* The first rule makes each div.POPOSSpace expand to the width of its grid cell.
+ The width of the grid container is a percentage of the window width, 
+ so these cells expand and contract with the window. */
+.POPOSSpace {
+    width: 100%;
+    text-align: center;
+}
+
+/* The second rule sets the width img tags within the div.POPOSSpace to 100% of the available space. 
+With this, the images match the width of their container. 
+The second property here height: auto makes images maintain their aspect ratio as they scale. */
+.POPOSSpace > img {
+    width: 100%;
+    height: auto;
+}
+
+/* Stretch Challenge */
+.POPOSSpace > .hours {
+    padding: 1em;
+    font-style: italic;
+    font-size: 15px;
+    font-family: Helvetica, sans-serif;
+}

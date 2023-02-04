@@ -1,0 +1,15 @@
+/* We calculated the width of this element to 100% the width of the container minus 80px. 
+With margin set to auto, the browser will make the margins equal on both sides. 
+
+40px margins on the left and the right (40px left margin + 40px right margin = 80px total).
+
+To display the spaces in a grid, display as grid, with three template columns. Each column is 1fr. 
+A fr is a unit that represent a fraction of the space available. */
+
+.POPOSList {
+    width: calc(100% - 80px);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}

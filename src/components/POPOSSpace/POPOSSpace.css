@@ -1,7 +1,11 @@
 /* The first rule makes each div.POPOSSpace expand to the width of its grid cell.
  The width of the grid container is a percentage of the window width, 
  so these cells expand and contract with the window. */
+
+ /* By making the parent component div.POPOSSpace position relative 
+ it will become the positioning context for any children that use absolute position. */
 .POPOSSpace {
+    position: relative;
     width: 100%;
     text-align: center;
 }
@@ -9,15 +13,49 @@
 /* The second rule sets the width img tags within the div.POPOSSpace to 100% of the available space. 
 With this, the images match the width of their container. 
 The second property here height: auto makes images maintain their aspect ratio as they scale. */
-.POPOSSpace > img {
+.POPOSSpace img {
     width: 100%;
     height: auto;
 }
 
 /* Stretch Challenge */
-.POPOSSpace > .hours {
+.POPOSSpace .hours {
     padding: 1em;
     font-style: italic;
     font-size: 15px;
     font-family: Helvetica, sans-serif;
+}
+
+.POPOSSpace .POPOSSpace-title {
+    text-decoration: none;
+    color: #000;
+}
+  
+.POPOSSpace h1 {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    font-weight: lighter;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 1rem;
+    text-align: left;
+}
+
+/* Here the container .POPOSSpace-info is declared position absolute 
+This way we can place it where we want. In this case I put it at right 0 and bottom 0 
+which make it hug the lower right corner. 
+I also aligned the text to the right. */
+.POPOSSpace .POPOSSpace-info {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: right;
+}
+
+.POPOSSpace .POPOSSpace-info div {
+	display: inline-block;
+	padding: 0.25em 0.5em;
+	background-color: rgba(255, 255, 255, 0.9);
 }

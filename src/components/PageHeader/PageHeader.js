@@ -1,14 +1,15 @@
 import React from 'react';
-import './Title.css';
+import './PageHeader.css';
 import { NavLink } from 'react-router-dom';
+import RandomSpace from '../RandomSpace/RandomSpace';
 
-function Title() {
+function PageHeader() {
     return (
-        <div className='Title'>
+        <div className='PageHeader'>
             <header>
                 <h1>SFPOPOS</h1>
-                <div className="Title-Subtitle">San Franciscos Privately Owned Public Spaces</div>
-                <div>
+                <div className='Header-Subheader'>San Franciscos Privately Owned Public Spaces</div>
+                <div className='Navigation'>
                 {/* A function to determine what class name should be applied to any link. 
                 React Router will pass an isActive prop. This is a Boolean. 
                 /True when the link is active and False when not. */}
@@ -18,11 +19,11 @@ function Title() {
                 <NavLink 
                     className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
                     to="/about">About</NavLink>
-
+                <RandomSpace />
                 </div>
             </header>
         </div>
     )
   }
   
-export default Title
+export default PageHeader;

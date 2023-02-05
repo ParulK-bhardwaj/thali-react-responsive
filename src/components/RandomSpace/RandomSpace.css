@@ -1,0 +1,9 @@
+.RandomSpace {
+    background-color:#6d1f1f;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:10px;
+    min-height:20px; 
+    min-width: 120px;
+  }

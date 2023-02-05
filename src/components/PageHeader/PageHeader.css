@@ -1,5 +1,5 @@
 /*  src/Title.css  */
-.Title {
+.PageHeader {
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -10,19 +10,18 @@
   color: #fff;
 }
 /* Stretch Challenge: Added Subtitle and CSSs */
-.Title-Subtitle {
+.Header-Subheader {
   box-sizing: border-box;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items:center;
-  padding: 1em;
-  margin-bottom: 2em;
+  padding: 0.8em;
   background-color: rgb(192, 45, 26);
   color: rgba(255, 255, 255, 0.75);
 }
 
-.Title a {
+.PageHeader a {
   display: inline-block;
   padding: 0.5em 1em;
   color: rgba(255, 255, 255, 0.835);
@@ -30,7 +29,7 @@
   text-decoration: none;
 }
 
-.Title .nav-link-active {
+.PageHeader .nav-link-active {
   color: #fff;
   border-bottom: 5px solid;
 }

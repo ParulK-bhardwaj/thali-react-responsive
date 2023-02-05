@@ -3,7 +3,7 @@ The goal of this tutorial is to make a site for SFPOPOS (San Francisco Privately
 React is a library for creating user interfaces. 
 
 # Screenshot
-![SFPOPOS Site] 
+![SFPOPOS Site] (https://github.com/ParulK-bhardwaj/ACS-1320-React-App/blob/main/SFPOPOS-Site-React.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

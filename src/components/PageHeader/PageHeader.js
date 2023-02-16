@@ -7,8 +7,8 @@ function PageHeader() {
     return (
         <div className='PageHeader'>
             <header>
-                <h1>SFPOPOS</h1>
-                <div className='Header-Subheader'>San Franciscos Privately Owned Public Spaces</div>
+                <h1>THALI - MUST EATS</h1>
+                <div className='Header-Subheader'>Flavors of India!</div>
                 <div className='Navigation'>
                 {/* A function to determine what class name should be applied to any link. 
                 React Router will pass an isActive prop. This is a Boolean. 

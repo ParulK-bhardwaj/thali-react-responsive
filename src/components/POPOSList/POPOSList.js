@@ -1,7 +1,7 @@
 import React from 'react';
 import POPOSSpace from '../POPOSSpace/POPOSSpace.js';
 import './POPOSList.css';
-import data from '../../sfpopos-data.js';
+import data from '../../indianfood-data.js';
 import { useState } from 'react';
 
 // map() returned an array of strings where 
@@ -16,19 +16,19 @@ export default function POPOSList() {
     const [ query, setQuery ] = useState('')
     const spaces = data
     // true if query is in title or in address
-    .filter(obj => obj.title.toLowerCase().includes(query.toLowerCase()) || obj.address.toLowerCase().includes(query.toLowerCase()))
+    .filter(obj => obj.name.toLowerCase().includes(query.toLowerCase()) || obj.state.toLowerCase().includes(query.toLowerCase()))
     // Deconstruct obj into properties const { id, title, address, images, hours } = obj
     
     // when the array is filtered each object will always use the same value for the id.
-    .map(({ id, title, address, images, hours }) => {           
+    .map(({ id, name, state, images, region }) => {           
         return (
             <POPOSSpace
             id={id}
-            key={`${title}-${id}`} // The title and id that we added through sfpopos-data.js file could be a key
-            name={title}
-            address={address}
-            image={images[0]}
-            hours={hours}
+            key={`${name}-${id}`} // The title and id that we added through data.js file could be a key
+            name={name}
+            state={state}
+            image={images}
+            region={region}
             />
         )
     })

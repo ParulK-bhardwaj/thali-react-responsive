@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router';
-import data from '../../sfpopos-data.js';
+import data from '../../indianfood-data.js';
 import POPOSFeatureList from '../POPOSFeatureList/POPOSFeatureList.js';
 import './POPOSDetails.css';
 

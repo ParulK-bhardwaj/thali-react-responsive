@@ -2,7 +2,7 @@
 import { useNavigate } from 'react-router-dom';
 import './RandomSpace.css';
 // to know the length of the list.
-import data from '../../sfpopos-data.json';
+import data from '../../indianfood-data.json';
 
 // component that outputs a single button.
 // The code here handles a click on the button with onClick. 

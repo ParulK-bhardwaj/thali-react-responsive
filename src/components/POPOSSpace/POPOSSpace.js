@@ -10,14 +10,14 @@ import { Link } from 'react-router-dom';
 
 function POPOSSpace(props) {
     // The attributes above set the values of the properties name, image and address props
-    const { name, image, address, hours, id } = props
+    const { name, state, image, region, id } = props
     return (
         <div className='POPOSSpace'>
             <Link className='POPOSSpace-title' to={`/details/${id}`}>
                 <img src={`${process.env.PUBLIC_URL}/images/${image}`}
                     width="300"
                     height="300"
-                    alt="Spaces"
+                    alt="Dishes"
                 />
             </Link> 
             <h1>
@@ -26,8 +26,8 @@ function POPOSSpace(props) {
                 </Link>
             </h1>
             <div className='POPOSSpace-info'>
-                <div>{address}</div>
-                <div className='hours'>{hours}</div>
+                <div>{state}</div>
+                <div>{region}</div>
             </div>
         </div>
     )

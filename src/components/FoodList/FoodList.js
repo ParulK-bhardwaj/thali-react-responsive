@@ -1,17 +1,17 @@
 import React from 'react';
-import POPOSSpace from '../POPOSSpace/POPOSSpace.js';
-import './POPOSList.css';
+import FoodSpace from '../FoodSpace/FoodSpace.js';
+import './FoodList.css';
 import data from '../../indianfood-data.js';
 import { useState } from 'react';
 
 // map() returned an array of strings where 
 // the callback function returned the title from each obj in the original array.
 
-// POPOSList is responsible for rendering its children contibuting to UI.
+// FoodList is responsible for rendering its children contibuting to UI.
 // Components represent UI elements.
 
 
-export default function POPOSList() {
+export default function FoodList() {
     // use state for search feature.
     const [ query, setQuery ] = useState('')
     const spaces = data
@@ -22,7 +22,7 @@ export default function POPOSList() {
     // when the array is filtered each object will always use the same value for the id.
     .map(({ id, name, state, images, region }) => {           
         return (
-            <POPOSSpace
+            <FoodSpace
             id={id}
             key={`${name}-${id}`} // The title and id that we added through data.js file could be a key
             name={name}
@@ -33,7 +33,7 @@ export default function POPOSList() {
         )
     })
     return (
-    <div className="POPOSList">
+    <div className="FoodList">
         {/* Created the input field for the search feature. */}
         {/* we have created a variable query that holds the value you entered into the field. */}
         <form>

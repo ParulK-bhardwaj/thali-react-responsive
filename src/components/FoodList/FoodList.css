@@ -6,7 +6,7 @@ With margin set to auto, the browser will make the margins equal on both sides.
 To display the spaces in a grid, display as grid, with three template columns. Each column is 1fr. 
 A fr is a unit that represent a fraction of the space available. */
 
-.POPOSList {
+.FoodList {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 2em;
@@ -18,39 +18,39 @@ A fr is a unit that represent a fraction of the space available. */
 Used media queries here to make adjustments for smaller screens*/
 /* the number of columns is changed to two equal columns when the screen is 960px or smaller. */
 @media only screen and (max-width: 960px) {
-	.POPOSList {
+	.FoodList {
 		grid-template-columns: 1fr 1fr;
 	}
 }
 
 /* Small screens mobile */
 @media only screen and (max-width: 700px) {
-	.POPOSList {
+	.FoodList {
 		grid-template-columns: 1fr;
 	}
 }
 
 /* Search Field */
 
-.POPOSList form {
+.FoodList form {
 	display: flex;
 	align-items: flex-start;
 }
 
-.POPOSList form input, .POPOSList form button {
+.FoodList form input, .FoodList form button {
 	padding: 1em;
 	margin: 0;
 	border: 1px solid;
 	font-size: 1rem;
 }
 
-.POPOSList form input {
+.FoodList form input {
 	flex: 1;
 	border-top-left-radius: 0.5em;
 	border-bottom-left-radius: 0.5em;
 }
 
-.POPOSList form button {
+.FoodList form button {
 	border-top-right-radius: 0.5em;
 	border-bottom-right-radius: 0.5em;
 }

@@ -4,7 +4,7 @@
 // Here we have converted an array of text strings into an array of emoji strings.
 
 import React from 'react';
-import './POPOSFeature.css';
+import './FoodFeature.css';
 
 function getFeature(str) {
 	switch(str) {
@@ -23,9 +23,9 @@ function getFeature(str) {
 	}
 };
 
-function POPOSFeature(props) {
+function FoodFeature(props) {
 	const emoji = getFeature(props.name)
-	return <div className="POPOSFeature">{emoji}</div>
+	return <div className="FoodFeature">{emoji}</div>
 };
 
-export default POPOSFeature;
+export default FoodFeature;

@@ -1,35 +1,66 @@
-/*  src/Title.css  */
 .PageHeader {
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  padding-top: 1em;
-  background-color: rgb(6, 6, 82);
-  color: #fff;
+  background-image: url("/Users/parulbhardwaj/Desktop/ACS-1320/Thali_React_Project/public/images/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 500px;
+  position: relative;
 }
-/* Stretch Challenge: Added Subtitle and CSSs */
+
+.PageHeader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
 .Header-Subheader {
-  box-sizing: border-box;
-  width: 100%;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.Navigation {
   display: flex;
   justify-content: center;
-  align-items:center;
-  padding: 0.8em;
-  background-color:  rgb(6, 6, 82);
-  color: rgba(255, 255, 255, 0.75);
 }
 
-.PageHeader a {
-  display: inline-block;
-  padding: 0.5em 1em;
-  color: rgba(255, 255, 255, 0.835);
-  font-weight: bold;
-  text-decoration: none;
+nav {
+  display: flex;
+  justify-content: center;
 }
 
-.PageHeader .nav-link-active {
+.nav-link {
   color: #fff;
-  border-bottom: 5px solid;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #fddb3a;
+}
+
+.nav-link-active {
+  color: #fddb3a;
+  font-weight: bold;
+  font-size: 1.5rem; /* To match the font size of other links */
 }

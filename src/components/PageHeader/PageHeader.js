@@ -15,7 +15,7 @@ function PageHeader() {
                 /True when the link is active and False when not. */}
                 <NavLink 
                     className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
-                    to="/">List</NavLink>
+                    to="/">Home</NavLink>
                 <NavLink 
                     className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
                     to="/about">About</NavLink>

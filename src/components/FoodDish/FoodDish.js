@@ -15,9 +15,9 @@ function FoodDish(props) {
         <div className='FoodDish'>
             <Link className='FoodDish-name' to={`/details/${id}`}>
                 <img src={`${process.env.PUBLIC_URL}/images/${image}`}
-                    width="300"
-                    height="300"
-                    alt="Dishes"
+                    // width="100"
+                    // height="100"
+                    alt={props.name}
                 />
             </Link> 
             <h1>

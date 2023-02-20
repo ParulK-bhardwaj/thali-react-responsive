@@ -3,10 +3,10 @@ With margin set to auto, the browser will make the margins equal on both sides.
 
 40px margins on the left and the right (40px left margin + 40px right margin = 80px total).
 
-To display the spaces in a grid, display as grid, with three template columns. Each column is 1fr. 
-A fr is a unit that represent a fraction of the space available. */
+To display the dishes in a grid, display as grid, with three template columns. Each column is 1fr. 
+A fr is a unit that represent a fraction of the dish available. */
 
-.FoodList {
+.Dishes {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 2em;
@@ -18,39 +18,33 @@ A fr is a unit that represent a fraction of the space available. */
 Used media queries here to make adjustments for smaller screens*/
 /* the number of columns is changed to two equal columns when the screen is 960px or smaller. */
 @media only screen and (max-width: 960px) {
-	.FoodList {
+	.Dishes {
 		grid-template-columns: 1fr 1fr;
 	}
 }
 
 /* Small screens mobile */
 @media only screen and (max-width: 700px) {
-	.FoodList {
+	.Dishes {
 		grid-template-columns: 1fr;
 	}
 }
 
-/* Search Field */
-
-.FoodList form {
+.FoodList {
 	display: flex;
-	align-items: flex-start;
+	flex-direction: column;
+	align-items: center;
 }
 
-.FoodList form input, .FoodList form button {
-	padding: 1em;
-	margin: 0;
-	border: 1px solid;
-	font-size: 1rem;
-}
-
-.FoodList form input {
-	flex: 1;
-	border-top-left-radius: 0.5em;
-	border-bottom-left-radius: 0.5em;
-}
-
-.FoodList form button {
-	border-top-right-radius: 0.5em;
-	border-bottom-right-radius: 0.5em;
+/* Search Field */
+input {
+	padding: 10px 20px;
+	margin: 10px 0;
+	box-sizing: border-box;
+	border: 2px solid #03033c;
+	border-radius: 6px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #3e54e1;
+	background-color: #f8f8f9;
 }

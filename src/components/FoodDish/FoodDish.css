@@ -4,21 +4,20 @@
 
  /* By making the parent component div.FoodDish position relative 
  it will become the positioning context for any children that use absolute position. */
-.FoodDish {
+/* .FoodDish {
     position: relative;
     width: 100%;
     text-align: center;
-}
+} */
 
 /* The second rule sets the width img tags within the div.FoodDish to 100% of the available space. 
 With this, the images match the width of their container. 
 The second property here height: auto makes images maintain their aspect ratio as they scale. */
-.FoodDish img {
+/* .FoodDish img {
     width: 100%;
     height: auto;
-}
+} */
 
-/* Stretch Challenge */
 .FoodDish .diet {
     padding: 1em;
     font-style: italic;
@@ -59,3 +58,35 @@ I also aligned the text to the right. */
 	padding: 0.25em 0.5em;
 	background-color: rgba(255, 255, 255, 0.9);
 }
+
+
+.FoodDish {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    /* color: white; */
+    background-color: black;
+    border-radius: 5px;
+    border-color: black;
+    box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.5);
+    height: auto;
+  }
+  
+  .FoodDish:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+    box-shadow: #02010c 0px 5px 10px;
+  }
+  
+  .FoodDish:hover::after {
+    position: absolute;
+  }
+  
+  
+  .FoodDish img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border-color: black;
+  }

@@ -4,7 +4,7 @@ Margin auto here centers the section by making the margins equal on the left and
 .FoodDetails {
 	display: flex;
 	flex-direction: row-reverse;
-	width: 960px;
+	width: 800px;
 	margin: auto;
     padding: 1em;
 }
@@ -15,19 +15,19 @@ Margin auto here centers the section by making the margins equal on the left and
 	padding: 0 1em;
 }
 
-.FoodDetails .FoodDetails-title {
+.FoodDetails .FoodDetails-name {
 	font-size: 2em;
 	margin: 0;
 }
 
 .FoodDetails .FoodDetails-image {
-	flex: 2;
+	flex: 1.5;
 }
 
 .FoodDetails .FoodDetails-image img {
 	width: 100%;
 }
 
-.FoodDetails .FoodDetails-hours {
+.FoodDetails .FoodDetails-where {
 	font-size: 1.5em;
 }

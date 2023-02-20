@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './components/App/App.js';
+import FoodDetails from './components/FoodDetails/FoodDetails';
 import FoodList from './components/FoodList/FoodList.js';
 import About from './components/About/About';
-// import FoodDetails from './components/FoodDetails/FoodDetails'
 import reportWebVitals from './reportWebVitals';
 // HashRouter and BrowserRouter are two options. 
 // They act the same and only differ in how they handle the URL/Path.
@@ -20,7 +20,7 @@ root.render(
       <Route path="/" element={<App />}>
         <Route path="/" element={<FoodList />} />
         <Route path="about" element={<About />} />
-        {/* <Route path="/details/:id" element={<FoodDetails />} /> */}
+        <Route path="/details/:id" element={<FoodDetails />} />
       </Route>
     </Routes>
   </Router>

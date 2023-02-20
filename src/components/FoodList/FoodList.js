@@ -1,5 +1,5 @@
 import React from 'react';
-import FoodSpace from '../FoodSpace/FoodSpace.js';
+import FoodDish from '../FoodDish/FoodDish.js';
 import './FoodList.css';
 import data from '../../indianfood-data.js';
 import { useState } from 'react';
@@ -17,12 +17,12 @@ export default function FoodList() {
     const spaces = data
     // true if query is in title or in address
     .filter(obj => obj.name.toLowerCase().includes(query.toLowerCase()) || obj.state.toLowerCase().includes(query.toLowerCase()))
-    // Deconstruct obj into properties const { id, title, address, images, hours } = obj
+    // Deconstruct obj into properties const { id, name, state, images, region } = obj
     
     // when the array is filtered each object will always use the same value for the id.
     .map(({ id, name, state, images, region }) => {           
         return (
-            <FoodSpace
+            <FoodDish
             id={id}
             key={`${name}-${id}`} // The title and id that we added through data.js file could be a key
             name={name}

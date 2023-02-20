@@ -1,7 +1,7 @@
 import React from 'react';
 import './PageHeader.css';
 import { NavLink } from 'react-router-dom';
-import RandomSpace from '../RandomSpace/RandomSpace';
+import DishOfTheDay from '../DishOfTheDay/DishOfTheDay';
 
 function PageHeader() {
     return (
@@ -19,7 +19,7 @@ function PageHeader() {
                 <NavLink 
                     className={({ isActive }) => isActive ? "nav-link-active" : "nav-link" }
                     to="/about">About</NavLink>
-                <RandomSpace />
+                <DishOfTheDay />
                 </div>
             </header>
         </div>

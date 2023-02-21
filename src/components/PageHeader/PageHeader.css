@@ -37,11 +37,6 @@ header h1 {
   margin-bottom: 2rem;
 }
 
-.Navigation {
-  display: flex;
-  justify-content: center;
-}
-
 nav {
   display: flex;
   justify-content: center;

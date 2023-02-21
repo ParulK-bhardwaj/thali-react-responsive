@@ -34,23 +34,6 @@
     "region": "North India"
   },
   {
-    "name": "Hyderabadi Biryani",
-    "ingredients": [ "Rice", "Meat", "Spices", "Saffron" ],
-    "diet": "Non-vegetarian",
-    "flavor_profile":[
-      "Spicy",
-      "Savory"
-    ],
-    "description": "Hyderabadi Biryani is a variation of the classic biryani dish, made with aromatic rice and juicy, spiced meat. It is popular in the state of Telangana.",
-    "link": "https://en.wikipedia.org/wiki/Hyderabadi_biryani",
-    "images": "hyderabadi-biryani.jpg",
-    "where_to_eat": "Paradise Restaurant",
-    "where_to_eat_link": "paradise_restaurant",
-    "city": "Hyderabad",
-    "state": "Telangana",
-    "region": "South India"
-  },
-  {
     "name": "Laal Maas",
     "ingredients": [ "Lamb", "Spices", "Red Chili Powder" ],
     "diet": "Non-vegetarian",
@@ -139,6 +122,23 @@
     "where_to_eat_link": "andhra_spice",
     "city": "Vijayawada",
     "state": "Andhra Pradesh",
+    "region": "South India"
+  },
+  {
+    "name": "Hyderabadi Biryani",
+    "ingredients": [ "Rice", "Meat", "Spices", "Saffron" ],
+    "diet": "Non-vegetarian",
+    "flavor_profile":[
+      "Spicy",
+      "Savory"
+    ],
+    "description": "Hyderabadi Biryani is a variation of the classic biryani dish, made with aromatic rice and juicy, spiced meat. It is popular in the state of Telangana.",
+    "link": "https://en.wikipedia.org/wiki/Hyderabadi_biryani",
+    "images": "hyderabadi-biryani.jpg",
+    "where_to_eat": "Paradise Restaurant",
+    "where_to_eat_link": "paradise_restaurant",
+    "city": "Hyderabad",
+    "state": "Telangana",
     "region": "South India"
   },
   {

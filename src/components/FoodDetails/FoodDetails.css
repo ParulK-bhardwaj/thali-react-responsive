@@ -11,7 +11,7 @@ Margin auto here centers the section by making the margins equal on the left and
 }
 
 .FoodDetails .FoodDetails-info {
-	flex: 2s;
+	flex: 2;
 	text-align: left;
 	padding: 0 1em;
 }
@@ -23,6 +23,15 @@ Margin auto here centers the section by making the margins equal on the left and
 
 .FoodDetails .FoodDetails-image {
 	flex: 2;
+	position: relative;
+    width: 100%;
+    text-align: center;
+    /* color: white; */
+    /* background-color: black; */
+    border-radius: 5px;
+    border-color: black;
+    box-shadow: 0 0 0 3px rgba(237, 235, 235, 0.725);
+    height: auto;
 }
 
 .FoodDetails .FoodDetails-image img {

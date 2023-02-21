@@ -43,7 +43,7 @@ export default function FoodList() {
 				<input
                     type="text"
 					value={query}
-					placeholder="search"
+					placeholder="Search by Dish, State or Region"
 					onChange={(e) => setQuery(e.target.value)}
 				/>
 		{/* </form> */}

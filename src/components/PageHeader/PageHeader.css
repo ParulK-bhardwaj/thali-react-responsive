@@ -1,5 +1,12 @@
+.Logo {
+  width: 110px;
+  height: 110px;
+  margin-top: -30px;
+  border-radius: 50em;
+}
+
 .PageHeader {
-  background-image: url("/Users/parulbhardwaj/Desktop/ACS-1320/Thali_React_Project/public/images/background.jpg");
+  background-image: url("/public/images/background.jpeg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -37,15 +44,16 @@ header h1 {
   margin-bottom: 2rem;
 }
 
-nav {
+.navigation {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-.nav-link {
+.nav-link{
   color: #fff;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  margin-left:1.5rem;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -58,4 +66,12 @@ nav {
   color: #fddb3a;
   font-weight: bold;
   font-size: 1.5rem; /* To match the font size of other links */
+}
+
+.DishOfTheDay{
+  color: #fff;
+  font-size: 1rem;
+  margin-left:1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
 }

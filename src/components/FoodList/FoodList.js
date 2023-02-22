@@ -39,14 +39,12 @@ export default function FoodList() {
     <div className="FoodList">
         {/* Created the input field for the search feature. */}
         {/* we have created a variable query that holds the value you entered into the field. */}
-        {/* <form> */}
 				<input
                     type="text"
 					value={query}
 					placeholder="Search by Dish, State or Region"
 					onChange={(e) => setQuery(e.target.value)}
 				/>
-		{/* </form> */}
         <div className="Dishes">
             { dishes }
         </div>

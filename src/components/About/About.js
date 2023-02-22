@@ -3,7 +3,7 @@
 
   function About() {
     return (
-      <div><h1 className='About-title'>About Thali</h1>
+      <div><h1 className='About-title'>About Us</h1>
         <div className='About'>
           
           <div className='About-image' >

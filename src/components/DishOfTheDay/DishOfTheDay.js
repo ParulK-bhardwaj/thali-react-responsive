@@ -8,13 +8,16 @@ import data from '../../indianfood-data.json';
 // The code here handles a click on the button with onClick. 
 function DishOfTheDay() {
 	const navigate = useNavigate()
+
     return (
-            <button 
+        <button 
         className="DishOfTheDay"
         onClick={(e) => {
-                const id = Math.floor(Math.random() * data.length)
-                navigate(`/details/${id}`)
-                }}>Dish of the Day</button>
+            const id = Math.floor(Math.random() * data.length)
+            navigate(`/details/${id}`)
+        }}>
+        Dish of the Day
+        </button>
     )
 };
 

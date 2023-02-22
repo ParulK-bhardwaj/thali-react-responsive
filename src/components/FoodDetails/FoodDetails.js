@@ -21,12 +21,12 @@ function FoodDetails(props) {
       <div className='FoodDetails-info'>
         <h1 className='FoodDetails-name'>{ name }</h1>
         <p className='FoodDetails-desc'>{ description }</p>
-        <p className='FoodDetails-ingredient'>Ingredient: {ingredients.join(', ')}</p>
-        <p className='FoodDetails-diet'>Diet: { diet }</p>
-        <p className='FoodDetails-flavor'>Flavor Profile: {flavor_profile.join(', ')}</p>
+        <p className='FoodDetails-ingredient'><span>Ingredients: </span> {ingredients.join(', ')}</p>
+        <p className='FoodDetails-diet'><span>Diet: </span> { diet }</p>
+        <p className='FoodDetails-flavor'><span>Flavor Profile: </span> {flavor_profile.join(', ')}</p>
         <SpiceLevelList flavor_profiles={ flavor_profile }/>
-        <p>Where to Eat: <Link to={{ pathname: `${where_to_eat_link}`, target: "_blank", rel: "noopener noreferrer" }} className="FoodDetails-where">{where_to_eat}</Link></p>
-        <p>City: {city}, {state}</p>
+        <p><span>Where to Eat: </span> <Link to={{ pathname: `${where_to_eat_link}`, target: "_blank", rel: "noopener noreferrer" }} className="FoodDetails-where">{where_to_eat}</Link></p>
+        <p><span>City: </span> {city}, {state}</p>
 
       </div>
     </div>

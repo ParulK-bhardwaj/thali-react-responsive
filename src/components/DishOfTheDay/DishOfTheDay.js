@@ -8,12 +8,17 @@ import data from '../../indianfood-data.json';
 // The code here handles a click on the button with onClick. 
 function DishOfTheDay() {
 	const navigate = useNavigate()
+    // this will get us date and time
+    const currentDate = new Date();
+    // getDate will get us an integer between 1 to 31 referencing the date only
+    const today = currentDate.getDate()
+    const dataLength = data.length
 
     return (
         <button 
         className="DishOfTheDay"
         onClick={(e) => {
-            const id = Math.floor(Math.random() * data.length)
+            const id = today % dataLength
             navigate(`/details/${id}`)
         }}>
         Dish of the Day

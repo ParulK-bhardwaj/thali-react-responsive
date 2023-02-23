@@ -5,7 +5,7 @@ Margin auto here centers the section by making the margins equal on the left and
 	display: flex;
 	gap: 1rem;
 	flex-direction: row;
-	/* width: 1200px; */
+	width: 80%;
 	margin: auto;
 	color: white;
     padding: 1em;
@@ -40,15 +40,10 @@ span {
 .FoodDetails-image {
 	flex: 1;
 	position: relative;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     border-radius: 5px;
     border-color: black;
 	box-shadow: 0 0 0 2px rgba(223, 221, 221, 0.5);
     height: auto;
 }
-
-.FoodDetails-image img {
-	width: 100%;
-}
-

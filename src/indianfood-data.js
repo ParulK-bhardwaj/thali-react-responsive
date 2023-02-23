@@ -6,4 +6,4 @@ data.forEach((obj, i) => {
 	obj.id = i
 })
 
-export default data
+export default data;

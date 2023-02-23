@@ -1,7 +1,7 @@
 .Logo {
   width: 110px;
   height: 110px;
-  margin-top: -30px;
+  margin-top: -20px;
   border-radius: 50em;
 }
 
@@ -35,12 +35,12 @@ header {
 }
 
 header h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 0;
 }
 
 .Header-Subheader {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 
@@ -51,7 +51,7 @@ header h1 {
 
 .nav-link{
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   margin-right: 1.5rem;
   margin-left:1.5rem;
   text-decoration: none;

@@ -52,4 +52,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### The images used in this project were sources from Google.
+### The images used in this project were sourced from Google.

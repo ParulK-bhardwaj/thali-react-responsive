@@ -1,5 +1,6 @@
 //React Router provides the useNavigate hook to programatically navigate to another route.
 import { useNavigate } from 'react-router-dom';
+import React from 'react';
 import './DishOfTheDay.css';
 // to know the length of the list.
 import data from '../../indianfood-data.json';

@@ -8,6 +8,12 @@ The user can search by a dish or a state or a region to find out the must try fo
 
 ![Home-page](Thali-Must-Eats-Home-Page.png)
 
+## Wireframe
+![Wireframe](https://www.figma.com/file/sSkLT3mqKoVxcaPq2Zf7tM/SFPOPOS---Wireframe?node-id=111%3A963&t=GOrhdwzNHjpi3t9C-1)
+
+## Outline
+![Outline](OUTLINE.md)
+
 ## Features
 - Search for the Dishes by Region, State or the Dish Name.
 - Dish of the Day features a Dish a day including the Dish details.

@@ -1,6 +1,5 @@
 import React from 'react';
 import FoodDish from '../FoodDish/FoodDish.js';
-import './FoodList.css';
 import data from '../../indianfood-data.js';
 import { useState } from 'react';
 

@@ -4,7 +4,6 @@
 // Here we have converted an array of text strings into an array of emoji strings.
 
 import React from 'react';
-import './SpiceLevel.css';
 
 function getSpiceLevel(str) {
 	switch(str) {

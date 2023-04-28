@@ -1,5 +1,4 @@
 import React from 'react';
-import './PageHeader.css';
 import { NavLink } from 'react-router-dom';
 import DishOfTheDay from '../DishOfTheDay/DishOfTheDay';
 import Logo from './logo-no-background.png';

@@ -1,5 +1,4 @@
 import React from 'react';
-import './Footer.css';
 
 // Stretch Challenge Footer component Date 
 export default function Footer() {

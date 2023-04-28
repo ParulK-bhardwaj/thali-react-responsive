@@ -3,7 +3,6 @@ import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import data from '../../indianfood-data.js';
 import SpiceLevelList from '../SpiceLevelList/SpiceLevelList.js';
-import './FoodDetails.css';
 
 function FoodDetails(props) {
   const params = useParams()

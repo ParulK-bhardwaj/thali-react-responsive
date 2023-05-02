@@ -1,6 +1,5 @@
 import React from 'react';
 import { useParams } from 'react-router';
-import { Link } from 'react-router-dom';
 import data from '../../indianfood-data.js';
 import SpiceLevelList from '../SpiceLevelList/SpiceLevelList.js';
 
@@ -24,7 +23,12 @@ function FoodDetails(props) {
         <p className='FoodDetails-diet'><span>Diet: </span> { diet }</p>
         <p className='FoodDetails-flavor'><span>Flavor Profile: </span> {flavor_profile.join(', ')}</p>
         <SpiceLevelList flavor_profiles={ flavor_profile }/>
-        <p><span>Where to Eat: </span> <Link to={{ pathname: `${where_to_eat_link}`, target: "_blank", rel: "noopener noreferrer" }} className="FoodDetails-where">{where_to_eat}</Link></p>
+        <p>
+          <span>Where to Eat: </span>
+          <a href={where_to_eat_link} target="_blank" rel="noopener noreferrer" className="FoodDetails-where">
+            {where_to_eat}
+          </a>
+        </p>
         <p><span>City: </span> {city}, {state}</p>
 
       </div>

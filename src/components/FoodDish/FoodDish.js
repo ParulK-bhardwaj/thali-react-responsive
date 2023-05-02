@@ -11,22 +11,22 @@ function FoodDish(props) {
     // The attributes above set the values of the properties name, image and address props
     const { name, state, image, region, id } = props
     return (
-        <div className='FoodDish'>
-            <Link className='FoodDish-name' to={`/details/${id}`}>
-                <img src={`${process.env.PUBLIC_URL}/images/${image}`}
-                    // width="100"
-                    // height="100"
-                    alt={props.name}
-                />
-            </Link> 
-            <h1>
+        <div className="my-2 px-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/3">
+            <div className="relative rounded-lg overflow-hidden group bg-white shadow-md">
                 <Link to={`/details/${id}`}>
-                    {name}
+                <img
+                    className="h-96 w-full object-cover transition duration-500 transform group-hover:scale-110"
+                    src={`${process.env.PUBLIC_URL}/images/${image}`}
+                    alt={name}
+                />
+                <div className="absolute inset-0 bg-white opacity-0"></div>
+                <div className="absolute top-0 left-0 p-4 bg-white opacity-70 group-hover:opacity-80 flex flex-col justify-end items-start">
+                    <h2 className="font-bold text-lg text-black-800">{name}</h2>
+                </div>
+                <div className="absolute bottom-0 right-0 p-4 bg-white opacity-70 group-hover:opacity-80 flex flex-col justify-end items-end">
+                    <div className="text-black-800 font-medium">{state}, {region}</div>
+                </div>
                 </Link>
-            </h1>
-            <div className='FoodDish-info'>
-                <div>{state}</div>
-                <div>{region}</div>
             </div>
         </div>
     )

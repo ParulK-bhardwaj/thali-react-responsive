@@ -9,7 +9,9 @@ function App() {
     <div className="App bg-black">
       <div className='min-h-screen'>
         <PageHeader />
-        <Outlet /> 
+        <div className='bg-gray-950 '>
+          <Outlet /> 
+        </div>
       </div>
       <div className="sticky top-[100vh]">
         <Footer />

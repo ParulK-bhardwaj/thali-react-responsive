@@ -21,7 +21,7 @@ function getSpiceLevel(str) {
 function SpiceLevel(props) {
 	const emoji = getSpiceLevel(props.name)
 	const emojiBlank = emoji === ''
-	return <div className={emojiBlank ? "blank" : "SpiceLevel"}>{emoji}</div>
+	return <div className={emojiBlank ? "blank" : "SpiceLevel"} >{emoji}</div>
 };
 
 export default SpiceLevel;

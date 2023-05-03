@@ -59,7 +59,7 @@ export default function FoodList() {
 
     // Deconstruct obj into properties const { id, name, state, images, region } = obj
     // when the array is filtered each object will always use the same value for the id.
-    .map(({ id, name, state, images, region }) => {           
+    .map(({ id, name, state, images, region, description }) => {           
         return (
             <FoodDish
             id={id}
@@ -68,12 +68,13 @@ export default function FoodList() {
             state={state}
             image={images}
             region={region}
+            description={description}
             />
         )
     })
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-4">
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 bg-gray-950">
+            <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 mt-4">
                 <input
                     type="text"
                     value={query}
@@ -129,7 +130,7 @@ export default function FoodList() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-wrap my-8 -mx-2">
+            <div className="flex flex-wrap my-8 -mx-1">
                 {dishes}
             </div>
         </div>      

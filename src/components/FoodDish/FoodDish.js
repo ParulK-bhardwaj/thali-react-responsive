@@ -11,7 +11,7 @@ function FoodDish(props) {
     // The attributes above set the values of the properties name, image and address props
     const { name, state, image, region, id } = props
     return (
-        <div className="my-2 px-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/3">
+        <div className="my-2 px-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/3  bg-gray-950">
             <div className="relative rounded-lg overflow-hidden group bg-white shadow-md">
                 <Link to={`/details/${id}`}>
                 <img

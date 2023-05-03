@@ -3,12 +3,17 @@ import PageHeader from '../PageHeader/PageHeader.js';
 import Footer from '../Footer/Footer.js';
 import { Outlet } from 'react-router-dom';
 
+// https://stackoverflow.com/questions/59812003/tailwindcss-fixed-sticky-footer-on-the-bottom
 function App() {
   return (
     <div className="App bg-black">
-      <PageHeader />
-      <Outlet />
-      <Footer />
+      <div className='min-h-screen'>
+        <PageHeader />
+        <Outlet /> 
+      </div>
+      <div className="sticky top-[100vh]">
+        <Footer />
+      </div>
     </div>
   );
 }

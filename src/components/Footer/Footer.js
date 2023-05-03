@@ -4,7 +4,7 @@ import React from 'react';
 export default function Footer() {
     let date =  new Date().getFullYear();
     return(
-        <div className='Footer'>
+        <div className='Footer text-white text-center bg-gray-900 py-1'>
             <p>Parul Bhardwaj copyright {date}</p>
         </div>
     )

@@ -16,7 +16,7 @@ function DishOfTheDay() {
 
     return (
         <button 
-        className="DishOfTheDay"
+        className="DishOfTheDay py-2 px-4 rounded-md bg-yellow-700 text-white font-bold shadow-md hover:bg-yellow-600 "
         onClick={(e) => {
             const id = today % dataLength
             navigate(`/details/${id}`)
@@ -26,4 +26,4 @@ function DishOfTheDay() {
     )
 };
 
-export default DishOfTheDay;
+export default DishOfTheDay; 

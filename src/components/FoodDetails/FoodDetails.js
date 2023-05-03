@@ -9,7 +9,7 @@ function FoodDetails(props) {
   const { images, name, description, diet, flavor_profile, where_to_eat, where_to_eat_link, city, state, ingredients } = data[id]
 
   return (
-    <div className='FoodDetails'>
+    <div className='FoodDetails text-white'>
       <div className='FoodDetails-image'>
         <img src={`${process.env.PUBLIC_URL}/images/${images}`} 
          height="600"

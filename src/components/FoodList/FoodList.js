@@ -72,64 +72,66 @@ export default function FoodList() {
         )
     })
     return (
-<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-  <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-4">
-    <input
-      type="text"
-      value={query}
-      placeholder="Search by Dish, City, State or Region"
-      onChange={(e) => setQuery(e.target.value)}
-      className="block w-4/5 py-2 px-3 border border-gray-300 rounded-md shadow-sm sm:text-md"
-    />
-    <div className="flex flex-col sm:flex-row sm:space-x-4 mt-4">
-      <label className="inline-flex items-center text-lg text-white">
-        <input
-          type="checkbox"
-          checked={isVegetarian}
-          onChange={handleVegetarianChange}
-          className="h-4 w-4 text-indigo-600 transition duration-150 ease-in-out form-checkbox"
-        />
-        <span className="ml-2">Vegetarian</span>
-      </label>
-      <label className="inline-flex items-center text-lg text-white mb-4">
-        <input
-          type="checkbox"
-          checked={isNonVegetarian}
-          onChange={handleNonVegetarianChange}
-          className="h-4 w-4 text-indigo-600 transition duration-150 ease-in-out form-checkbox"
-        />
-        <span className="ml-2">Non-vegetarian</span>
-      </label>
-      <div className="relative">
-        <select
-          value={spiceLevel}
-          onChange={(e) => setSpiceLevel(e.target.value)}
-          className="block appearance-none w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-2 pr-8 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-md"
-        >
-          <option value="">Spice Level</option>
-          <option value="Spicy">Spicy</option>
-          <option value="Mildly Spicy">Mildly Spicy</option>
-          <option value="Mild">Mild</option>
-        </select>
-        <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-          <svg
-            className="h-4 w-4 text-gray-400"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="flex flex-wrap my-8 -mx-2">
-          {dishes}
-        </div>
-      </div>      
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-4">
+                <input
+                    type="text"
+                    value={query}
+                    placeholder="Search by Dish, City, State, Region"
+                    onChange={(e) => setQuery(e.target.value)}
+                    className="block w-full py-2 px-2 border border-gray-300 rounded-md shadow-sm sm:text-md text-sm"
+                 />
+            </div>
+            <div className="flex flex-col sm:flex-row sm:space-x-4 mt-4 justify-center">
+                <label className="inline-flex items-center text-md text-white mb-4">
+                    <input
+                        type="checkbox"
+                        checked={isVegetarian}
+                        onChange={handleVegetarianChange}
+                        className="h-4 w-4 text-indigo-600 transition duration-150 ease-in-out form-checkbox"
+                        />
+                <span className="ml-2">Vegetarian</span>
+                </label>
+                <label className="inline-flex items-center text-md text-white mb-4">
+                    <input
+                    type="checkbox"
+                    checked={isNonVegetarian}
+                    onChange={handleNonVegetarianChange}
+                    className="h-4 w-4 text-indigo-600 transition duration-150 ease-in-out form-checkbox"
+                    />
+                    <span className="ml-2">Non-vegetarian</span>
+                </label>
+                <div className="relative">
+                    <select
+                        value={spiceLevel}
+                        onChange={(e) => setSpiceLevel(e.target.value)}
+                        className="block appearance-none w-full bg-white border border-gray-300 hover:border-gray-400 px-3 py-1 pr-5 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-md text-sm"
+                    >
+                        <option value="" disabled>Spice Level</option>
+                        <option value="">All</option>
+                        <option value="Spicy">Spicy</option>
+                        <option value="Mildly Spicy">Mildly Spicy</option>
+                        <option value="Mild">Mild</option>
+                    </select>
+                    {/* displaying a small arrow icon on the right side of a search input field */}
+                    <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                        <svg
+                            className="h-4 w-4 text-gray-400"
+                            fill="none"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                        <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-wrap my-8 -mx-2">
+                {dishes}
+            </div>
+        </div>      
     )
 }

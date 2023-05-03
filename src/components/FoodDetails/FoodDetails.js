@@ -30,7 +30,7 @@ function FoodDetails(props) {
           {city}, {state}
         </p>
       </div>
-      <div className='FoodDetails-image w-full md:w-1/2 py-5 px-2 rounded-lg overflow-hidden order-1 md:order-2'>
+      <div className='FoodDetails-image w-full md:w-1/2 h-100 py-5 px-2 rounded-lg overflow-hidden order-1 md:order-2'>
         <img src={`${process.env.PUBLIC_URL}/images/${images}`} 
         alt={name} className="h-full" />
       </div>

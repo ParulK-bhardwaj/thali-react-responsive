@@ -15,10 +15,10 @@ function PageHeader() {
                 React Router will pass an isActive prop. This is a Boolean. 
                 /True when the link is active and False when not. */}
                     <NavLink 
-                        className={({ isActive }) => isActive ? "text-green-700 text-xl mx-4" : "text-yellow-700 text-xl mx-4" }
+                        className={({ isActive }) => isActive ? "text-green-600 text-xl mx-4" : "text-yellow-600 text-xl mx-4" }
                         to="/">Home</NavLink>
                     <NavLink 
-                        className={({ isActive }) => isActive ? "text-green-700 text-xl mx-4" : "text-yellow-700 text-xl mx-4"  }
+                        className={({ isActive }) => isActive ? "text-green-600 text-xl mx-4" : "text-yellow-600 text-xl mx-4"  }
                         to="/about">About</NavLink>
                     <DishOfTheDay className="DishOfTheDay"/>
                 </div>

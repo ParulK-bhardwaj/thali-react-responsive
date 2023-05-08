@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 // Link on the other hand is for general navigation that might appear anywhere else. The big difference is NavLink offers the extra feature of activeClassName and Link doesn't have this.
 import { Link } from 'react-router-dom';
 

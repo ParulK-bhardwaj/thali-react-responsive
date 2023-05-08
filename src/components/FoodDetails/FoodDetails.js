@@ -9,7 +9,7 @@ function FoodDetails(props) {
   const { images, name, description, diet, flavor_profile, where_to_eat, where_to_eat_link, city, state, ingredients } = data[id]
 
   return (
-    <div className='FoodDetails text-white bg-gray-950 flex flex-wrap justify-center m-2'>
+    <section className='FoodDetails text-white bg-gray-950 flex flex-wrap justify-center m-2'>
       <div className='FoodDetails-info w-full md:w-1/2 px-6 py-4 order-2 md:order-1 h-full'>
         <h1 className='FoodDetails-name text-4xl font-bold mb-4'>{ name }</h1>
         <p className='FoodDetails-desc mb-4'>{ description }</p>
@@ -34,7 +34,7 @@ function FoodDetails(props) {
         <img src={`${process.env.PUBLIC_URL}/images/${images}`} 
         alt={name} className="h-full" />
       </div>
-    </div>
+    </section>
   )
 }
 

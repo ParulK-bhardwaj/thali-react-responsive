@@ -15,12 +15,14 @@ function DishOfTheDay() {
     const dataLength = data.length
 
     return (
-        <button 
+        <button
+        type="button"
         className="DishOfTheDay py-2 px-2 rounded-md bg-yellow-700 text-white font-bold shadow-md hover:bg-yellow-600 mx-4"
         onClick={(e) => {
             const id = today % dataLength
             navigate(`/details/${id}`)
-        }}>
+        }}
+        aria-label="Dish of the Day">
         Dish of the Day
         </button>
     )

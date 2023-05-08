@@ -73,32 +73,36 @@ export default function FoodList() {
         )
     })
     return (
-        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 bg-gray-950">
-            <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 mt-4">
+        <main className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 bg-gray-950">
+            <section className="flex flex-col sm:flex-row justify-center items-center sm:space-x-4 mt-4">
+                <label htmlFor="searchInput" className="sr-only">Search Input</label>
                 <input
                     type="text"
                     value={query}
                     placeholder="Search by Dish, City, State, Region"
                     onChange={(e) => setQuery(e.target.value)}
                     className="block w-full py-2 px-2 border border-gray-300 rounded-md shadow-sm sm:text-md text-sm"
+                    id="searchInput"
                  />
-            </div>
-            <div className="flex flex-col sm:flex-row sm:space-x-4 mt-4 justify-center">
-                <label className="inline-flex items-center text-md text-white mb-4">
+            </section>
+            <form className="flex flex-col sm:flex-row sm:space-x-4 mt-4 justify-center">
+                <label htmlFor="vegetarianInput" className="inline-flex items-center text-md text-white mb-4">
                     <input
                         type="checkbox"
                         checked={isVegetarian}
                         onChange={handleVegetarianChange}
                         className="h-4 w-4 text-indigo-600 transition duration-150 ease-in-out form-checkbox"
+                        id="vegetarianInput"
                         />
                 <span className="ml-2">Vegetarian</span>
                 </label>
-                <label className="inline-flex items-center text-md text-white mb-4">
+                <label htmlFor="nonVegetarianInput" className="inline-flex items-center text-md text-white mb-4">
                     <input
                     type="checkbox"
                     checked={isNonVegetarian}
                     onChange={handleNonVegetarianChange}
                     className="h-4 w-4 text-indigo-600 transition duration-150 ease-in-out form-checkbox"
+                    id="nonVegetarianInput"
                     />
                     <span className="ml-2">Non-vegetarian</span>
                 </label>
@@ -107,6 +111,7 @@ export default function FoodList() {
                         value={spiceLevel}
                         onChange={(e) => setSpiceLevel(e.target.value)}
                         className="block appearance-none w-full bg-white border border-gray-300 hover:border-gray-400 px-3 py-1 pr-5 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-md text-sm"
+                        id="spiceLevelInput"
                     >
                         <option value="" disabled>Spice Level</option>
                         <option value="">All</option>
@@ -124,15 +129,16 @@ export default function FoodList() {
                             strokeWidth="2"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
+                            aria-label="down arrow icon"
                         >
                         <path d="M6 9l6 6 6-6" />
                         </svg>
                     </div>
                 </div>
-            </div>
-            <div className="flex flex-wrap my-8 -mx-1">
+            </form>
+            <section className="flex flex-wrap my-8 -mx-1">
                 {dishes}
-            </div>
-        </div>      
+            </section>
+        </main>      
     )
 }

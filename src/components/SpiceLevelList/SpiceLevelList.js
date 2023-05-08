@@ -7,7 +7,7 @@ function SpiceLevelList(props) {
     return <SpiceLevel key={flavor_profile} name={flavor_profile} />
     })
 	return (
-    <div className="SpiceLevelList">{icons}</div>
+    <section className="SpiceLevelList">{icons}</section>
     )
 }
 

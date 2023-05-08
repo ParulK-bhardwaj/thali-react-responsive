@@ -7,7 +7,7 @@ function PageHeader() {
     return (
         <div className='PageHeader'>
             <header>
-                <img src={Logo} alt='Thali Must Eats Logo' className='Logo h-60 md:h-40 w-auto md:w-auto/2 block mx-auto md:mx/2' />
+                <img src={Logo} alt='Thali Must Eats - Flavors of India Logo' className='Logo h-60 md:h-40 w-auto md:w-auto/2 block mx-auto md:mx/2' />
                 {/* <h1 className="text-2xl font-bold text-gray-800" >THALI - MUST EATS</h1>
                 <div className='Header-Subheader'>Flavors of India!</div> */}
                 <div className='Navigation flex items-center justify-center text-navy bg-grey-200 mb-4 sm:mb-1'>

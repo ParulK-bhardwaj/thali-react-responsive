@@ -1,6 +1,5 @@
 import React from 'react';
 import SpiceLevel from '../SpiceLevel/SpiceLevel.js';
-import './SpiceLevelList.css';
 
 // This component will take an array of strings and return an array of SpiceLevel components.
 function SpiceLevelList(props) {
@@ -8,7 +7,7 @@ function SpiceLevelList(props) {
     return <SpiceLevel key={flavor_profile} name={flavor_profile} />
     })
 	return (
-    <div className="SpiceLevelList">{icons}</div>
+    <section className="SpiceLevelList">{icons}</section>
     )
 }
 

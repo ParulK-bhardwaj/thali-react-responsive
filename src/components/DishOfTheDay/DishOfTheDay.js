@@ -1,7 +1,6 @@
 //React Router provides the useNavigate hook to programatically navigate to another route.
 import { useNavigate } from 'react-router-dom';
 import React from 'react';
-import './DishOfTheDay.css';
 // to know the length of the list.
 import data from '../../indianfood-data.json';
 
@@ -16,15 +15,17 @@ function DishOfTheDay() {
     const dataLength = data.length
 
     return (
-        <button 
-        className="DishOfTheDay"
+        <button
+        type="button"
+        className="DishOfTheDay py-2 px-2 rounded-md bg-yellow-700 text-white font-bold shadow-md hover:bg-yellow-600 mx-4"
         onClick={(e) => {
             const id = today % dataLength
             navigate(`/details/${id}`)
-        }}>
+        }}
+        aria-label="Dish of the Day">
         Dish of the Day
         </button>
     )
 };
 
-export default DishOfTheDay;
+export default DishOfTheDay; 

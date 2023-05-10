@@ -1,12 +1,11 @@
 import React from 'react';
-import './Footer.css';
 
 // Stretch Challenge Footer component Date 
 export default function Footer() {
     let date =  new Date().getFullYear();
     return(
-        <div className='Footer'>
+        <footer className='Footer text-white text-center bg-gray-900 py-1'>
             <p>Parul Bhardwaj copyright {date}</p>
-        </div>
+        </footer>
     )
 }

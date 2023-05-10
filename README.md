@@ -94,10 +94,7 @@ Information, most interested in: Food Dish list
 What might look for in the site: Search: Search: by name, 
 reviews, images of the dishes, share the Where to Eat via mobile.
 
-
 ** Memojis are sourced from: https://www.phonearena.com/news/Apple-Memoji-WWDC-2021_id132638
-
-
 
 ## Contributing
 

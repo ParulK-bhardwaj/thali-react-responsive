@@ -1,6 +1,6 @@
 # Thali - Must Eats (Flavors of India)
 ## Visit the site at: 
-[[https://parulk-bhardwaj.github.io/thali-react-responsive/](https://parulk-bhardwaj.github.io/thali-react-responsive/)](https://parulk-bhardwaj.github.io/Thali-React-Project/)
+[https://parulk-bhardwaj.github.io/thali-react-responsive/](https://parulk-bhardwaj.github.io/thali-react-responsive/)
 
 This project is a website built with React and styled with Tailwind that aims to showcases the must-try foods from all 29 states of India (currently shocases 20 states). Whether you are visiting a specific region or state, this website provides you with comprehensive information about the different dishes that you must try. The site aims to provide a resource for food enthusiasts and travelers seeking to explore the rich culinary diversity of India.
 

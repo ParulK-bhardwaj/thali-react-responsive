@@ -2,7 +2,7 @@
   "name": "thali_react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ParulK-bhardwaj.github.io/Thali-React-Project",
+  "homepage": "http://ParulK-bhardwaj.github.io/thali-react-responsive",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
